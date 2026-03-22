@@ -1,3 +1,6 @@
+// PROBLEM : BINARY SEARCH
+//  TIME COMPLEXITY : O(n logn)
+//  SPACE COMPLEXITY : O(1)
 #include<iostream>
 #include<vector>
 #include<algorithm>

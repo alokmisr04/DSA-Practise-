@@ -21,15 +21,20 @@ void display(Node* head) {
 }
 int main() {
     Node* head = NULL;
-    int n, value;
+    int n, value, value1;
     cout << "Enter number of elements: ";
     cin >> n;
     for(int i = 0; i < n; i++) {
-        cout << "Enter value " << i+1 << ": ";
-        cin >> value;
-        insertAtHead(head, value);
+        cout << "Enter value at position " << i+1 << ": ";
+        cin >> value1;
+        insertAtHead(head, value1);   // ✅ FIXED
     }
+    cout << "Enter the value to be inserted at head: ";
+    cin >> value;
+    insertAtHead(head, value);
+
     cout << "\nLinked List: ";
     display(head);
+
     return 0;
 }
